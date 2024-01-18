@@ -5,7 +5,7 @@ import firebase from "./services/Firebase.js";
 import { setHeaders } from "./middlerwares.js";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6000;
 // load firebase database
 const db = firebase?.db;
 // for parsing application/json
