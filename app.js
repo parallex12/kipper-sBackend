@@ -20,7 +20,7 @@ loadRoutes(v1Routes, (path, route) => app.use("/kippers_api" + path, route));
 
 //Wrong Route
 app.use("/", async (req, res) => {
-  res.send("<p> 404 not found !</p>" + PORT);
+  res.send({ msg: "Path 404 not found !" });
 });
 
 app.listen(PORT, () => {
